@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+#define int long long
+using namespace std;
+signed main() 
+{
+  
+  int t;
+  cin>>t;
+  while(t--){
+   int n,m;
+cin>>n>>m;
+vector<string>hi(n);
+for(int i=0;i<hi.size();i++)
+{
+    cin>>hi[i];
+}
+int a=-1,b=-1;
+for(int i=0;i<n;i++){
+  for(int j=0;j<m;j++){
+    if(hi[i][j]=='#'){
+      a=j;
+      break;
+    }
+  }
+  if(a!=-1)
+  {
+      break;
+}}
+ 
+for(int j=0;j<m;j++){
+  for(int i=0;i<n;i++){
+    if(hi[i][j]=='#'){
+      b=i;
+      break;
+    }
+  }
+  if(b!=-1) 
+  {
+      break;
+}}
+ 
+ 
+cout<<b+1<<' '<<a+1<<'\n';
+ 
+  }
+ 
+    return 0;
+}
